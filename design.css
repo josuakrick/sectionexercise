@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+
+
+.cardCompleto {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Spartan', sans-serif;
+}
+
+/* card left */
+
+.container{ 
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-bottom: 50px;
+   
+}
+
+.titulo {
+    color:  hsl(300, 42%, 30%);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+
+
+.sub {
+    color: hsl(300, 16%, 52%);
+    font-size: 15px;
+}
+
+/* card right stars em rates */
+
+.rates {
+display: flex;
+flex-direction: column; 
+justify-content: space-around;
+
+}
+
+.rates p {
+    color: hsl(300, 43%, 22%);
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.rateUm , .rateDois , .rateTres {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: hsl(300, 24%, 96%) ;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.rateUm {
+    margin-right: 30%;
+}
+
+
+.rateDois {
+    margin-left: 10%;
+}
+
+.rateTres {
+    margin-left: 20%;
+}
+
+/* container bottom */
+
+.cardDois {
+    display: flex;
+    flex-direction: row;
+}
+
+/* card Colton */
+
+.colton {
+ background-color:hsl(300, 43%, 22%) ;
+ border-radius: 6px;
+width: 300px; 
+height: 198px;
+margin-left: 80px;
+}
+
+.colton img {
+    margin: 30px 20px;
+    border-radius: 50%;
+}
+
+.colton h2  {
+    position: relative;
+    left: 75px;
+    bottom: 70px;
+    color: hsla(300, 33%, 83%, 0.89) ;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.colton sub {
+    position: relative;
+    left: 75px;
+    bottom: 65px;
+    color: hsl(333, 54%, 70%) ;
+    font-weight: bolder;
+    font-size: 9px;
+}
+
+.colton p {
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: hsl(300, 8%, 83%);
+    
+}
+
+/* card Irene */
+
+.irene {
+    margin-top: 15px;
+    margin-left: 30px;
+    background-color:hsl(300, 43%, 22%) ;
+    border-radius: 6px;
+   width: 300px; 
+   height: 198px;
+   }
+   
+   .irene img {
+       margin: 30px 20px;
+       border-radius: 50%;
+   }
+   
+   .irene h2  {
+       position: relative;
+       left: 75px;
+       bottom: 70px;
+       color: hsla(300, 33%, 83%, 0.89) ;
+       font-size: 10px;
+       font-weight: bolder;
+   }
+   
+   .irene sub {
+       position: relative;
+       left: 75px;
+       bottom: 65px;
+       color: hsl(333, 54%, 70%) ;
+       font-weight: bolder;
+       font-size: 9px;
+   }
+   
+   .irene p {
+       position: relative;
+       bottom: 40px;
+       left: 20px;
+       font-size: 12px;
+       line-height: 1.4;
+       color: hsl(300, 8%, 83%);
+   }
+
+   /* card Anne */
+
+   .anne {
+     margin-top: 30px;
+     margin-left: 30px;
+    background-color:hsl(300, 43%, 22%) ;
+    border-radius: 6px;
+   width: 300px; 
+   }
+   
+   .anne img {
+       margin: 30px 20px;
+       border-radius: 50%;
+   }
+   
+   .anne h2  {
+       position: relative;
+       left: 75px;
+       bottom: 70px;
+       color: hsla(300, 33%, 83%, 0.89) ;
+       font-size: 10px;
+       font-weight: bolder;
+   }
+   
+   .anne sub {
+       position: relative;
+       left: 75px;
+       bottom: 65px;
+       color: hsl(333, 54%, 70%) ;
+       font-weight: bolder;
+       font-size: 9px;
+   }
+   
+   .anne p {
+       position: relative;
+       bottom: 40px;
+       left: 20px;
+       font-size: 12px;
+       line-height: 1.4;
+       color: hsl(300, 8%, 83%);
+   }
+
+   @media  screen and (max-width: 1250px) { 
+       .cardCompleto , .rates {
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: column;
+           width: auto;
+           justify-content: center;
+           margin: auto;
+       }
+
+   }
+
+   /* Mobile */
+
+   @media  screen and (max-width:768px) {
+    .cardCompleto {
+        width: auto;
+    }
+
+     .container {
+           flex-direction: column;
+           justify-content: initial;
+           width: auto;
+           align-items: center;
+        
+       }
+
+       .textoPrincipal {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+       }
+
+       .rateUm , .rateDois , .rateTres {
+           width: 100%;
+           text-align: center;
+           align-items: center;
+           margin: auto;
+       }
+
+       .cardDois {
+           flex-direction: column;
+           width: 100%;
+           margin: auto;
+           text-align: center;
+           align-items: center;
+       }
+
+       .colton , .irene , .anne {
+           margin: auto;
+           width: 100%;
+       }
+       
+   }
